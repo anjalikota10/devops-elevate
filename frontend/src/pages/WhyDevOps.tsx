@@ -1,21 +1,11 @@
-import BlurText from "../components/BlurText";
+import PageLayout from "../components/PageLayout";
 
-const WhyDevOps = () => {
+export default function WhyDevOps() {
   return (
-    <div className="p-8">
-      <BlurText
-        text="Why DevOps?"
-        delay={150}
-        animateBy="words"
-        direction="top"
-        className="text-4xl font-bold mb-8"
-      />
-      <p>
-        DevOps helps teams collaborate, automate deployment pipelines, and
-        release updates faster with fewer errors.
-      </p>
-    </div>
+    <PageLayout
+      title="Why DevOps?"
+      text="DevOps improves collaboration between development and operations teams, enabling faster innovation, reduced deployment failures, and quicker recovery times."
+      nextPath="/no-devops"
+    />
   );
-};
-
-export default WhyDevOps;
+}

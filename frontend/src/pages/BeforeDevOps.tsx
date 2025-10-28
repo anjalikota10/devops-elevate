@@ -1,22 +1,11 @@
-import BlurText from "../components/BlurText";
+import PageLayout from "../components/PageLayout";
 
-const BeforeDevOps = () => {
+export default function BeforeDevOps() {
   return (
-    <div className="p-8">
-      <BlurText
-        text="Before DevOps"
-        delay={150}
-        animateBy="words"
-        direction="top"
-        className="text-4xl font-bold mb-8"
-      />
-      <p>
-        Before DevOps, software development and operations teams worked
-        separately, often leading to longer release cycles and integration
-        issues.
-      </p>
-    </div>
+    <PageLayout
+      title="Before DevOps"
+      text="Before DevOps, development and operations worked separately, leading to miscommunication, longer release cycles, and unstable production environments."
+    />
   );
-};
+}
 
-export default BeforeDevOps;
